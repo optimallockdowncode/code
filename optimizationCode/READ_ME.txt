@@ -1,5 +1,4 @@
-This is the code for the manuscript Optimal Lockdowns Under Constraints
-submitted to Nature Human Behaviour. 
+This is the code for the manuscript Optimal Lockdowns Under Constraints.
 
 To use: download the code and place all files in the same directory. 
 Then simply run driver.m or driver_2var.m. You can specify the parameter 

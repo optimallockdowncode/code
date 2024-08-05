@@ -6,7 +6,11 @@ Data and .do files which create figure 1 are found in the directory "empirical."
 The directory "OptimizationCode" contains all codes which create figures 2-7 in the manuscript. 
 To create a figure, download all files to a common directory, navigate to the folder corresponding 
 to the figure you want to see and run the driver. This will run all necessary code and produce the 
-figure once completed. 
+figure once completed. For example, to see Figure 5(I) or (II) simply navigate to the folder
+Figure 5 and run the script driver_fig5_I.m or driver_fig5_II.m. The only difference is Figure 3(AB).
+Because this figure has multiple simulations plotted on top of each other, the data files for each 
+simulation are included, and one can create the figure simply by running plotFigure3AB. Alternatively,
+one can run driver_fig3AB.m and it will re-run the simulations and then create the figure.
 
 A NOTE ON CPU TIME: Currently, all code in the "Figure" folders is set to run at high resolution
 (i.e., for a time horizon of T = 365 and a time step of dt = 1). At this resolution, individual 

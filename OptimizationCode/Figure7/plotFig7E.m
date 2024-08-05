@@ -1,0 +1,13 @@
+clear; close all;
+load fig7E.mat
+%%
+figure(216);clf;hold on;
+[x,y] = ndgrid(vals1,vals2);
+surf(x,y,totalQ); colorbar; 
+TI = title(sprintf('(E) Reinfection rate')); TI.Interpreter = 'latex'; TI.FontSize = 16;
+XL = xlabel(sprintf('$%s$',INDEP_VARIABLE1)); XL.Interpreter = 'latex'; XL.FontSize = 14; %XL.Rotation = 0; XL.Position(1) = 0.06; XL.Position(2) = -6;
+YL = ylabel(sprintf('$%s$',INDEP_VARIABLE2)); YL.Interpreter = 'latex'; YL.FontSize = 14;
+axis([min(vals1) max(vals1) min(vals2) max(vals2)]);
+colormap default;
+colorbar;
+view([40,50]);
